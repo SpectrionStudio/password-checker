@@ -32,5 +32,13 @@ elif score >= 2:
     print("Mot de passe suffisant")
 else:
     print("Mot de passe fragile")
+    if a_maj == False:
+        print("Il manque une majuscule.")
+    if a_chiffre == False:
+        print("Il manque un chiffre.")
+    if a_special == False:
+        print("Il manque un caractère spécial.")
+    if longueur_ok == False:
+        print("Le mot de passe est inférieur à 10 caractères.")
 
 
