@@ -1,13 +1,43 @@
 # Password Checker
 
-Le programme est un simple vérificateur de mot de passe, il permet de jauger avec différents compteurs comme un vrai vérificateur pour juger si un mot de passe est efficace ou non.
+Un petit vérificateur de mot de passe en Python. Il vérifie quatre règles, donne un niveau de solidité et indique quelles règles ne sont pas respectées.
 
 ## Utilisation
-La commande pour le lancer est : python password_checker.py ainsi qu'ensuite la saisie du mot de passe que vous souhaitez tester.
+
+Lancez le programme dans un terminal :
+
+```
+python password_checker.py
+```
+
+Saisissez ensuite le mot de passe à tester.
+
+Exemple avec `bonjour` :
+
+```
+Quel est votre mot de passe ? bonjour
+Mot de passe fragile
+Il manque une majuscule.
+Il manque un chiffre.
+Il manque un caractère spécial.
+Le mot de passe est inférieur à 10 caractères.
+```
 
 ## Règles vérifiées
-La liste : longueur, majuscule, chiffre, caractère spécial.
+
+- Longueur : au moins 10 caractères
+- Au moins une majuscule
+- Au moins un chiffre
+- Au moins un caractère spécial
+
+## Niveaux
+
+Chaque règle respectée ajoute 1 point au score :
+
+- 4 points : mot de passe solide
+- 2 ou 3 points : mot de passe suffisant
+- 0 ou 1 point : mot de passe fragile
 
 ## Ce que j'ai appris
-J'ai souhaité réapprendre les bases de python afin de pouvoir reprendre en main le code en général ainsi que les règles des conditions, des boucles etc... un simple petit exercice permettant de me remettre sur le chemin tranquillement
-tout en utilisant le terminal et l'initialiser avec GitHub.
+
+J'ai voulu réapprendre les bases de Python pour reprendre le code en main : les conditions, les boucles, les variables booléennes. C'était un petit exercice pour me remettre sur le chemin tranquillement, en utilisant le terminal et en initialisant un dépôt avec Git et GitHub.
